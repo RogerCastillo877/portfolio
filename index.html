@@ -21,24 +21,32 @@
       <a href="#">Intagram</a>
     </nav>
   </header>
-  <nav>
+  <nav class="main-nav">
     <a href="#">Projects</a>
     <a href="#">Technologies</a>
     <a href="#">About</a>
   </nav>
   <main>
     <section>
-      <div>
-        <h2>Hello, I'm Roger</h2>
-        <p>frontend developer</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A assumenda, magnam laborum repellat amet alias
+      <div class="profile">
+        <h2 class="profile--title">Hello, I'm Roger,</h2>
+        <p class="profile--sub-title">frontend developer</p>
+        <p class="profile--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A assumenda, magnam laborum
+          repellat amet alias
           iure, atque quis neque pariatur odio? Nostrum nihil nam enim labore praesentium? Tempore, molestiae debitis!
         </p>
       </div>
-      <figure>
+      <!-- <figure>
         <img src="" alt="">
-      </figure>
-      <button>Donwnload CV</button>
+      </figure> -->
+      <picture>
+        <source srcset="./scr/img/imagen-perfil.avif" type="image/avif" />
+        <!-- <source srcset=".webp" type="image/webp" /> -->
+        <img class="profile--img" loading="lazy" src="./scr/img/imagen-perfil.jpg" alt="Profile image" width="300"
+          height="300">
+        <div class="circle"></div>
+      </picture>
+      <button class="btn">Donwnload CV</button>
     </section>
   </main>
   <aside>
