@@ -234,7 +234,8 @@ main {
 
 .profile__text {
   color: var(--blue-light);
-  margin: 3rem 0
+  margin: 3rem 0;
+  line-height: 1.5;
 }
 
 picture {
