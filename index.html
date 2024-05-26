@@ -13,25 +13,36 @@
 </head>
 
 <body>
-  <header>
-    <h1>Rocas</h1>
-    <nav>
-      <a href="#">Github</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Intagram</a>
-    </nav>
+  <header class="header container">
+    <div class="header__grid">
+      <figure class="header__logo">
+        <img src="" alt="Logo image">
+      </figure>
+      <nav class="social-networks">
+        <a class="social-networks__link" href="https://facebook.com">
+          <span class="social-networks__accesible">Facebook</span>
+        </a>
+        <a class="social-networks__link" href="https://instagram.com"><span
+            class="social-networks__accesible">Instagram</span></a>
+        <a class="social-networks__link" href="https://youtube.com"><span
+            class="social-networks__accesible">Youtube</span></a>
+        <a class="social-networks__link" href="https://x.com"><span class="social-networks__accesible">X</span></a>
+      </nav>
+    </div>
   </header>
-  <nav class="main-nav">
-    <a href="#">Projects</a>
-    <a href="#">Technologies</a>
-    <a href="#">About</a>
-  </nav>
+  <section class="navigation">
+    <nav class="navigation__container">
+      <a class="navigation__link" href="#">Projects</a>
+      <a class="navigation__link" href="#">Technologies</a>
+      <a class="navigation__link" href="#">About</a>
+    </nav>
+  </section>
   <main>
     <section>
       <div class="profile">
-        <h2 class="profile--title">Hello, I'm Roger,</h2>
-        <p class="profile--sub-title">frontend developer</p>
-        <p class="profile--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A assumenda, magnam laborum
+        <h2 class="profile__title">Hello, I'm Roger,</h2>
+        <p class="profile__sub-title">frontend developer</p>
+        <p class="profile__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A assumenda, magnam laborum
           repellat amet alias
           iure, atque quis neque pariatur odio? Nostrum nihil nam enim labore praesentium? Tempore, molestiae debitis!
         </p>
@@ -42,31 +53,86 @@
       <picture>
         <source srcset="./scr/img/imagen-perfil.avif" type="image/avif" />
         <!-- <source srcset=".webp" type="image/webp" /> -->
-        <img class="profile--img" loading="lazy" src="./scr/img/imagen-perfil.jpg" alt="Profile image" width="300"
+        <img class="profile__img" loading="lazy" src="./scr/img/imagen-perfil.jpg" alt="Profile image" width="300"
           height="300">
         <div class="circle"></div>
       </picture>
-      <button class="btn">Donwnload CV</button>
+      <button class="btn btn-primary">Donwnload CV</button>
+    </section>
+    <section class="proyects-cards">
+      <h2 class="proyects-cards__heading">Proyectos</h2>
+      <div class="proyects-cards__grid">
+        <div class="proyect-card">
+          <div class="proyect-card__image"></div>
+          <div class="proyect-card__content">
+            <h3 class="proyect-card__name">Card title</h3>
+            <p class="proyect-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, aliquid
+              distinctio! Porro sit, molestias nam accusamus quas natus a provident error repellendus nostrum possimus
+              at earum, officia quod dolores rerum.</p>
+            <div class="proyect-card__links">
+              <a class="proyect-card__link btn btn-primary" href="#">Prev. button</a>
+              <a class="proyect-card__link btn btn-secondary" href="#">GitHub button</a>
+            </div>
+          </div>
+        </div>
+        <div class="proyect-card">
+          <div class="proyect-card__image"></div>
+          <div class="proyect-card__content">
+            <h3 class="proyect-card__name">Card title</h3>
+            <p class="proyect-card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, aliquid
+              distinctio! Porro sit, molestias nam accusamus quas natus a provident error repellendus nostrum possimus
+              at earum, officia quod dolores rerum.</p>
+            <div class="proyect-card__links">
+              <a class="proyect-card__link btn btn-primary" href="#">Prev. button</a>
+              <a class="proyect-card__link btn btn-secondary" href="#">GitHub button</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <aside>
     <div>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <h3>Card title</h3>
-      <p>Card description</p>
-      <button>Prev. button</button>
-      <button>GitHub button</button>
+
     </div>
   </aside>
-  <footer>
-    <figure>
-      <img src="" alt="">
-    </figure>
-    <p>All rights reserved 2024</p>
+  <section class="consult">
+    <h2 class="consult__heading">Consult</h2>
+    <div class="container">
+      <p class="consult__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, optio temporibus unde at qui, quos magnam
+        possimus ex quo ut accusamus quidem delectus nihil consequatur non velit reiciendis architecto quia?
+      </p>
+      <a href="#" class="consult__link btn btn-primary">Contact me</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__grid container">
+      <div class="footer__box">
+        <figure>
+          <img src="" alt="Logo image">
+        </figure>
+      </div>
+      <div class="footer__box">
+        <h3 class="footer__heading">About me...</h3>
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita officiis quas illo omnis accusamus
+          vitae labore pariatur, quasi aliquid cupiditate nostrum. In itaque, nisi praesentium laborum quaerat sed
+          voluptatem!
+        </p>
+      </div>
+      <div class="footer__box">
+        <h3 class="footer__heading">Navigation</h3>
+        <nav class="footer__navigation">
+          <a class="footer__link" href="#">Projects</a>
+          <a class="footer__link" href="#">Technologies</a>
+          <a class="footer__link" href="#">About</a>
+        </nav>
+      </div>
+    </div>
+    <p class="footer__copyright">All rights reserved 2024</p>
   </footer>
 </body>
-<!-- <nav></nav> -->
+<!-- https://api.github.com/users/${username}/repos -->
 
 </html>
