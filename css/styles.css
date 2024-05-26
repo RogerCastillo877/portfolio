@@ -230,6 +230,7 @@ main {
   color: var(--white);
   font-size: 4.5rem;
   margin: 1rem 0;
+  line-height: 1;
 }
 
 .profile__text {
