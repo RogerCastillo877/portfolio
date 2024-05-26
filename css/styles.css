@@ -173,11 +173,12 @@ header {
 
 /* NAVIGATION */
 .navigation {
-  background-color: var(--blue-light);
+  background-color: var(--dark-blue);
   padding: 2rem;
   margin: 2rem 0;
   position: sticky;
   top: 0;
+  z-index: 20;
 }
 
 .navigation__container {
@@ -243,8 +244,9 @@ picture {
 .profile__img {
   border-radius: 50%;
   border: 5px solid var(--purple);
+  position: relative;
   margin-bottom: 6rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 .circle {
@@ -255,7 +257,6 @@ picture {
   position: absolute;
   top: 20rem;
   right: 5rem;
-  z-index: -1;
 }
 
 @media (min-width: 550px) {
@@ -449,6 +450,7 @@ picture {
 .event__year {
   font-size: 3rem;
   color: var(--white);
+  padding: 1rem;
 }
 
 .event__text {
