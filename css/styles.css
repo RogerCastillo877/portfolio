@@ -176,12 +176,16 @@ header {
   background-color: var(--blue-light);
   padding: 2rem;
   margin: 2rem 0;
+  position: sticky;
+  top: 0;
 }
 
 .navigation__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 11;
 }
 
 .navigation__link {
@@ -260,6 +264,12 @@ picture {
   }
 }
 
+@media (min-width: 768px) {
+  body {
+    background-color: var(--blue-light);
+  }
+}
+
 /* PROYECTS */
 .proyects-cards {
   margin-top: 5rem;
@@ -276,7 +286,8 @@ picture {
 }
 
 .proyects-cards__grid {
-  /* crear grid 1 col para movil, dos para tablet, 3 para grandes */
+  display: grid;
+  gap: 2rem;
 }
 
 .proyect-card {
@@ -298,6 +309,22 @@ picture {
   background-image: url(../scr/img/propiedad_2.jpg);
 }
 
+.proyect-card:nth-child(3) .proyect-card__image {
+  background-image: url(../scr/img/propiedad_3.jpg);
+}
+
+.proyect-card:nth-child(4) .proyect-card__image {
+  background-image: url(../scr/img/propiedad_4.jpg);
+}
+
+.proyect-card:nth-child(5) .proyect-card__image {
+  background-image: url(../scr/img/propiedad_5.jpg);
+}
+
+.proyect-card:nth-child(6) .proyect-card__image {
+  background-image: url(../scr/img/propiedad_6.jpg);
+}
+
 .proyect-card__name {
   color: var(--white);
   font-size: 4.5rem;
@@ -315,6 +342,18 @@ picture {
   display: flex;
   justify-content: space-around;
   margin-bottom: 0;
+}
+
+@media (min-width: 550px) {
+  .proyects-cards__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .proyects-cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* COSULT */
@@ -419,12 +458,7 @@ picture {
   padding: 1.5rem 3rem;
 }
 
-@media (min-width: 550px) {
-  .timeline__grid {
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+@media (min-width: 550px) {}
 
 @media (min-width: 768px) {
   .timeline__grid {
