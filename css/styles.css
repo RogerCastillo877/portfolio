@@ -472,6 +472,21 @@ picture {
   }
 }
 
+.fixed {
+  display: none;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 3rem;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 60rem;
+  right: 6rem;
+}
+
 /* FOOTER */
 .footer {
   padding-top: 5rem;
